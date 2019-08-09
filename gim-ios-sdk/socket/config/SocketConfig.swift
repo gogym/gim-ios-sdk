@@ -10,7 +10,7 @@ import UIKit
 import SwiftProtobuf
 
 class SocketConfig: NSObject {
-
+    
     fileprivate var handlerDict = Dictionary<Int,ChatBsProtocol>();
     
     //是否开启ssl
@@ -21,6 +21,8 @@ class SocketConfig: NSObject {
     var p12Passwd:String?;
     var cerPasswd:String?;
     
+    var SOCKET_HOST:String?;
+    var SOCKET_PORT:UInt16?;
     //单例模式
     static let sharedInstance=SocketConfig();
     private override init() {
@@ -30,6 +32,13 @@ class SocketConfig: NSObject {
         handlerDict[Type.ACK_REQ]=AckHandler();
         //handlerDict[Type.ADD_FRIEND_REQ]=AddFriendHandler();
         //handlerDict[Type.ADD_FRIEND_RESP]=AddFriendRespHandler();
+    }
+    
+    
+    
+    func setHost(SOCKET_HOST:String,SOCKET_PORT:String){
+        self.SOCKET_HOST=SOCKET_HOST;
+        self.SOCKET_PORT=SOCKET_PORT;
     }
     
     
@@ -49,7 +58,7 @@ class SocketConfig: NSObject {
         
         if(needClientAuth){
             if(p12Path==nil || cerPath==nil){
-                  fatalError("Missing the server cert resource from the bundle")
+                fatalError("Missing the server cert resource from the bundle")
             }else{
                 self.p12Path=p12Path;
                 self.cerPath=cerPath;
@@ -84,5 +93,13 @@ class SocketConfig: NSObject {
     func getCerPasswd()->String?{
         
         return self.cerPasswd;
+    }
+    
+    func getHost()-> String{
+        return self.SOCKET_HOST!
+    }
+    
+    func getPort()->UInt16{
+        return self.SOCKET_PORT!
     }
 }

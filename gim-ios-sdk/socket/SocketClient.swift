@@ -62,7 +62,7 @@ extension SocketClient {
                 }
                 
                 do {
-                    try self.clientSocket.connect(toHost: Const.SOCKET_HOST, onPort: UInt16(Const.SOCKET_PORT), withTimeout: -1)
+                    try self.clientSocket.connect(toHost: SocketConfig.sharedInstance.getHost(), onPort: UInt16(SocketConfig.sharedInstance.getPort()), withTimeout: -1)
                 } catch {
                     print(error)
                 }
@@ -194,7 +194,7 @@ extension SocketClient: GCDAsyncSocketDelegate {
             //            }
             
             let url=SocketConfig.sharedInstance.getCer();
-
+            
             
             do {
                 let rootCertData = try Data(contentsOf: url!)
