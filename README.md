@@ -6,6 +6,9 @@
 
 
 ```
+//最简单的使用示例
+SocketConfig.sharedInstance.setHost(SOCKET_HOST: "localhost", SOCKET_PORT: 1234)
+//开启ssl
 SocketConfig.sharedInstance.openSsl(needClientAuth: true, p12Path: url, p12Passwd: "123456", cerPath: cerPath);
-                SocketClient.sharedInstance.startConnect();
+SocketClient.sharedInstance.startConnect();
 ```
