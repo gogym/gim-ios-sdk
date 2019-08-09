@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8825B73522FD6FDA00878EC5 /* AbsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B70722FD6FDA00878EC5 /* AbsHandler.swift */; };
+		8825B73622FD6FDA00878EC5 /* BaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B70822FD6FDA00878EC5 /* BaseHandler.swift */; };
+		8825B73722FD6FDA00878EC5 /* HeartBeatHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B70922FD6FDA00878EC5 /* HeartBeatHandler.swift */; };
+		8825B73822FD6FDA00878EC5 /* SingleChatHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B70B22FD6FDA00878EC5 /* SingleChatHandler.swift */; };
+		8825B73922FD6FDA00878EC5 /* GroupChatHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B70C22FD6FDA00878EC5 /* GroupChatHandler.swift */; };
+		8825B73A22FD6FDA00878EC5 /* AddFriendHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B70D22FD6FDA00878EC5 /* AddFriendHandler.swift */; };
+		8825B73B22FD6FDA00878EC5 /* AddFriendRespHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B70E22FD6FDA00878EC5 /* AddFriendRespHandler.swift */; };
+		8825B73C22FD6FDA00878EC5 /* ConnetHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B70F22FD6FDA00878EC5 /* ConnetHandler.swift */; };
+		8825B73D22FD6FDA00878EC5 /* AckHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B71022FD6FDA00878EC5 /* AckHandler.swift */; };
+		8825B73E22FD6FDA00878EC5 /* HeartBeatReq.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B71222FD6FDA00878EC5 /* HeartBeatReq.pb.swift */; };
+		8825B73F22FD6FDA00878EC5 /* ConnectReq.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B71322FD6FDA00878EC5 /* ConnectReq.pb.swift */; };
+		8825B74022FD6FDA00878EC5 /* ConnectResp.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B71422FD6FDA00878EC5 /* ConnectResp.pb.swift */; };
+		8825B74122FD6FDA00878EC5 /* AckReq.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B71522FD6FDA00878EC5 /* AckReq.pb.swift */; };
+		8825B74222FD6FDA00878EC5 /* SingleChatReq.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B71622FD6FDA00878EC5 /* SingleChatReq.pb.swift */; };
+		8825B74322FD6FDA00878EC5 /* AddFriendReq.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B71722FD6FDA00878EC5 /* AddFriendReq.pb.swift */; };
+		8825B74422FD6FDA00878EC5 /* AddFriendResp.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B71822FD6FDA00878EC5 /* AddFriendResp.pb.swift */; };
+		8825B74522FD6FDA00878EC5 /* GroupChatReq.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B71922FD6FDA00878EC5 /* GroupChatReq.pb.swift */; };
+		8825B74622FD6FDA00878EC5 /* Message.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B71A22FD6FDA00878EC5 /* Message.pb.swift */; };
+		8825B74722FD6FDA00878EC5 /* SocketConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B71C22FD6FDA00878EC5 /* SocketConfig.swift */; };
+		8825B74822FD6FDA00878EC5 /* MsgType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B71E22FD6FDA00878EC5 /* MsgType.swift */; };
+		8825B74922FD6FDA00878EC5 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B71F22FD6FDA00878EC5 /* Type.swift */; };
+		8825B74A22FD6FDA00878EC5 /* MessageGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B72022FD6FDA00878EC5 /* MessageGen.swift */; };
+		8825B74B22FD6FDA00878EC5 /* SocketClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B72222FD6FDA00878EC5 /* SocketClientDelegate.swift */; };
+		8825B74C22FD6FDA00878EC5 /* GroupChatDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B72322FD6FDA00878EC5 /* GroupChatDelegate.swift */; };
+		8825B74D22FD6FDA00878EC5 /* SingleChatDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B72422FD6FDA00878EC5 /* SingleChatDelegate.swift */; };
+		8825B74E22FD6FDA00878EC5 /* AddFriendDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B72522FD6FDA00878EC5 /* AddFriendDelegate.swift */; };
+		8825B74F22FD6FDA00878EC5 /* ConnectDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B72622FD6FDA00878EC5 /* ConnectDelegate.swift */; };
+		8825B75022FD6FDA00878EC5 /* MessageReadProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B72822FD6FDA00878EC5 /* MessageReadProtocol.swift */; };
+		8825B75122FD6FDA00878EC5 /* ChatBsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B72922FD6FDA00878EC5 /* ChatBsProtocol.swift */; };
+		8825B75222FD6FDA00878EC5 /* ReadRawVarint32Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B72B22FD6FDA00878EC5 /* ReadRawVarint32Decode.swift */; };
+		8825B75322FD6FDA00878EC5 /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = 8825B72E22FD6FDA00878EC5 /* Documentation.html */; };
+		8825B75422FD6FDA00878EC5 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8825B72F22FD6FDA00878EC5 /* GCDAsyncUdpSocket.m */; };
+		8825B75522FD6FDA00878EC5 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8825B73022FD6FDA00878EC5 /* GCDAsyncSocket.m */; };
+		8825B75622FD6FDA00878EC5 /* SocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825B73422FD6FDA00878EC5 /* SocketClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8825B6DB22FD6E9200878EC5 /* gim-ios-sdk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gim-ios-sdk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8825B6EA22FD6E9300878EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8825B70722FD6FDA00878EC5 /* AbsHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbsHandler.swift; sourceTree = "<group>"; };
+		8825B70822FD6FDA00878EC5 /* BaseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseHandler.swift; sourceTree = "<group>"; };
+		8825B70922FD6FDA00878EC5 /* HeartBeatHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartBeatHandler.swift; sourceTree = "<group>"; };
+		8825B70B22FD6FDA00878EC5 /* SingleChatHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleChatHandler.swift; sourceTree = "<group>"; };
+		8825B70C22FD6FDA00878EC5 /* GroupChatHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupChatHandler.swift; sourceTree = "<group>"; };
+		8825B70D22FD6FDA00878EC5 /* AddFriendHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendHandler.swift; sourceTree = "<group>"; };
+		8825B70E22FD6FDA00878EC5 /* AddFriendRespHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendRespHandler.swift; sourceTree = "<group>"; };
+		8825B70F22FD6FDA00878EC5 /* ConnetHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnetHandler.swift; sourceTree = "<group>"; };
+		8825B71022FD6FDA00878EC5 /* AckHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AckHandler.swift; sourceTree = "<group>"; };
+		8825B71222FD6FDA00878EC5 /* HeartBeatReq.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartBeatReq.pb.swift; sourceTree = "<group>"; };
+		8825B71322FD6FDA00878EC5 /* ConnectReq.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectReq.pb.swift; sourceTree = "<group>"; };
+		8825B71422FD6FDA00878EC5 /* ConnectResp.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectResp.pb.swift; sourceTree = "<group>"; };
+		8825B71522FD6FDA00878EC5 /* AckReq.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AckReq.pb.swift; sourceTree = "<group>"; };
+		8825B71622FD6FDA00878EC5 /* SingleChatReq.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleChatReq.pb.swift; sourceTree = "<group>"; };
+		8825B71722FD6FDA00878EC5 /* AddFriendReq.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendReq.pb.swift; sourceTree = "<group>"; };
+		8825B71822FD6FDA00878EC5 /* AddFriendResp.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendResp.pb.swift; sourceTree = "<group>"; };
+		8825B71922FD6FDA00878EC5 /* GroupChatReq.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupChatReq.pb.swift; sourceTree = "<group>"; };
+		8825B71A22FD6FDA00878EC5 /* Message.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.pb.swift; sourceTree = "<group>"; };
+		8825B71C22FD6FDA00878EC5 /* SocketConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketConfig.swift; sourceTree = "<group>"; };
+		8825B71E22FD6FDA00878EC5 /* MsgType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MsgType.swift; sourceTree = "<group>"; };
+		8825B71F22FD6FDA00878EC5 /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		8825B72022FD6FDA00878EC5 /* MessageGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageGen.swift; sourceTree = "<group>"; };
+		8825B72222FD6FDA00878EC5 /* SocketClientDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketClientDelegate.swift; sourceTree = "<group>"; };
+		8825B72322FD6FDA00878EC5 /* GroupChatDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupChatDelegate.swift; sourceTree = "<group>"; };
+		8825B72422FD6FDA00878EC5 /* SingleChatDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleChatDelegate.swift; sourceTree = "<group>"; };
+		8825B72522FD6FDA00878EC5 /* AddFriendDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendDelegate.swift; sourceTree = "<group>"; };
+		8825B72622FD6FDA00878EC5 /* ConnectDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectDelegate.swift; sourceTree = "<group>"; };
+		8825B72822FD6FDA00878EC5 /* MessageReadProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageReadProtocol.swift; sourceTree = "<group>"; };
+		8825B72922FD6FDA00878EC5 /* ChatBsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBsProtocol.swift; sourceTree = "<group>"; };
+		8825B72B22FD6FDA00878EC5 /* ReadRawVarint32Decode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadRawVarint32Decode.swift; sourceTree = "<group>"; };
+		8825B72E22FD6FDA00878EC5 /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
+		8825B72F22FD6FDA00878EC5 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		8825B73022FD6FDA00878EC5 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		8825B73122FD6FDA00878EC5 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		8825B73222FD6FDA00878EC5 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		8825B73322FD6FDA00878EC5 /* CocoaAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaAsyncSocket.h; sourceTree = "<group>"; };
+		8825B73422FD6FDA00878EC5 /* SocketClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8825B6D822FD6E9200878EC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8825B6D222FD6E9200878EC5 = {
+			isa = PBXGroup;
+			children = (
+				8825B6DD22FD6E9200878EC5 /* gim-ios-sdk */,
+				8825B6DC22FD6E9200878EC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8825B6DC22FD6E9200878EC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8825B6DB22FD6E9200878EC5 /* gim-ios-sdk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8825B6DD22FD6E9200878EC5 /* gim-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				8825B70522FD6FDA00878EC5 /* socket */,
+				8825B6EA22FD6E9300878EC5 /* Info.plist */,
+			);
+			path = "gim-ios-sdk";
+			sourceTree = "<group>";
+		};
+		8825B70522FD6FDA00878EC5 /* socket */ = {
+			isa = PBXGroup;
+			children = (
+				8825B70622FD6FDA00878EC5 /* handler */,
+				8825B71122FD6FDA00878EC5 /* pb */,
+				8825B71B22FD6FDA00878EC5 /* config */,
+				8825B71D22FD6FDA00878EC5 /* comm */,
+				8825B72122FD6FDA00878EC5 /* delegate */,
+				8825B72722FD6FDA00878EC5 /* protocol */,
+				8825B72A22FD6FDA00878EC5 /* coder */,
+				8825B72C22FD6FDA00878EC5 /* CocoaAsyncSocket */,
+				8825B73422FD6FDA00878EC5 /* SocketClient.swift */,
+			);
+			path = socket;
+			sourceTree = "<group>";
+		};
+		8825B70622FD6FDA00878EC5 /* handler */ = {
+			isa = PBXGroup;
+			children = (
+				8825B70722FD6FDA00878EC5 /* AbsHandler.swift */,
+				8825B70822FD6FDA00878EC5 /* BaseHandler.swift */,
+				8825B70922FD6FDA00878EC5 /* HeartBeatHandler.swift */,
+				8825B70A22FD6FDA00878EC5 /* bs */,
+			);
+			path = handler;
+			sourceTree = "<group>";
+		};
+		8825B70A22FD6FDA00878EC5 /* bs */ = {
+			isa = PBXGroup;
+			children = (
+				8825B70B22FD6FDA00878EC5 /* SingleChatHandler.swift */,
+				8825B70C22FD6FDA00878EC5 /* GroupChatHandler.swift */,
+				8825B70D22FD6FDA00878EC5 /* AddFriendHandler.swift */,
+				8825B70E22FD6FDA00878EC5 /* AddFriendRespHandler.swift */,
+				8825B70F22FD6FDA00878EC5 /* ConnetHandler.swift */,
+				8825B71022FD6FDA00878EC5 /* AckHandler.swift */,
+			);
+			path = bs;
+			sourceTree = "<group>";
+		};
+		8825B71122FD6FDA00878EC5 /* pb */ = {
+			isa = PBXGroup;
+			children = (
+				8825B71222FD6FDA00878EC5 /* HeartBeatReq.pb.swift */,
+				8825B71322FD6FDA00878EC5 /* ConnectReq.pb.swift */,
+				8825B71422FD6FDA00878EC5 /* ConnectResp.pb.swift */,
+				8825B71522FD6FDA00878EC5 /* AckReq.pb.swift */,
+				8825B71622FD6FDA00878EC5 /* SingleChatReq.pb.swift */,
+				8825B71722FD6FDA00878EC5 /* AddFriendReq.pb.swift */,
+				8825B71822FD6FDA00878EC5 /* AddFriendResp.pb.swift */,
+				8825B71922FD6FDA00878EC5 /* GroupChatReq.pb.swift */,
+				8825B71A22FD6FDA00878EC5 /* Message.pb.swift */,
+			);
+			path = pb;
+			sourceTree = "<group>";
+		};
+		8825B71B22FD6FDA00878EC5 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				8825B71C22FD6FDA00878EC5 /* SocketConfig.swift */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		8825B71D22FD6FDA00878EC5 /* comm */ = {
+			isa = PBXGroup;
+			children = (
+				8825B71E22FD6FDA00878EC5 /* MsgType.swift */,
+				8825B71F22FD6FDA00878EC5 /* Type.swift */,
+				8825B72022FD6FDA00878EC5 /* MessageGen.swift */,
+			);
+			path = comm;
+			sourceTree = "<group>";
+		};
+		8825B72122FD6FDA00878EC5 /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				8825B72222FD6FDA00878EC5 /* SocketClientDelegate.swift */,
+				8825B72322FD6FDA00878EC5 /* GroupChatDelegate.swift */,
+				8825B72422FD6FDA00878EC5 /* SingleChatDelegate.swift */,
+				8825B72522FD6FDA00878EC5 /* AddFriendDelegate.swift */,
+				8825B72622FD6FDA00878EC5 /* ConnectDelegate.swift */,
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+		8825B72722FD6FDA00878EC5 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8825B72822FD6FDA00878EC5 /* MessageReadProtocol.swift */,
+				8825B72922FD6FDA00878EC5 /* ChatBsProtocol.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		8825B72A22FD6FDA00878EC5 /* coder */ = {
+			isa = PBXGroup;
+			children = (
+				8825B72B22FD6FDA00878EC5 /* ReadRawVarint32Decode.swift */,
+			);
+			path = coder;
+			sourceTree = "<group>";
+		};
+		8825B72C22FD6FDA00878EC5 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				8825B72D22FD6FDA00878EC5 /* GCD */,
+				8825B73322FD6FDA00878EC5 /* CocoaAsyncSocket.h */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		8825B72D22FD6FDA00878EC5 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				8825B72E22FD6FDA00878EC5 /* Documentation.html */,
+				8825B72F22FD6FDA00878EC5 /* GCDAsyncUdpSocket.m */,
+				8825B73022FD6FDA00878EC5 /* GCDAsyncSocket.m */,
+				8825B73122FD6FDA00878EC5 /* GCDAsyncUdpSocket.h */,
+				8825B73222FD6FDA00878EC5 /* GCDAsyncSocket.h */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8825B6DA22FD6E9200878EC5 /* gim-ios-sdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8825B6ED22FD6E9300878EC5 /* Build configuration list for PBXNativeTarget "gim-ios-sdk" */;
+			buildPhases = (
+				8825B6D722FD6E9200878EC5 /* Sources */,
+				8825B6D822FD6E9200878EC5 /* Frameworks */,
+				8825B6D922FD6E9200878EC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "gim-ios-sdk";
+			productName = "gim-ios-sdk";
+			productReference = 8825B6DB22FD6E9200878EC5 /* gim-ios-sdk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8825B6D322FD6E9200878EC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = gogym;
+				TargetAttributes = {
+					8825B6DA22FD6E9200878EC5 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 8825B6D622FD6E9200878EC5 /* Build configuration list for PBXProject "gim-ios-sdk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8825B6D222FD6E9200878EC5;
+			productRefGroup = 8825B6DC22FD6E9200878EC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8825B6DA22FD6E9200878EC5 /* gim-ios-sdk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8825B6D922FD6E9200878EC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8825B75322FD6FDA00878EC5 /* Documentation.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8825B6D722FD6E9200878EC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8825B75522FD6FDA00878EC5 /* GCDAsyncSocket.m in Sources */,
+				8825B74522FD6FDA00878EC5 /* GroupChatReq.pb.swift in Sources */,
+				8825B73A22FD6FDA00878EC5 /* AddFriendHandler.swift in Sources */,
+				8825B73522FD6FDA00878EC5 /* AbsHandler.swift in Sources */,
+				8825B73F22FD6FDA00878EC5 /* ConnectReq.pb.swift in Sources */,
+				8825B75622FD6FDA00878EC5 /* SocketClient.swift in Sources */,
+				8825B74E22FD6FDA00878EC5 /* AddFriendDelegate.swift in Sources */,
+				8825B74A22FD6FDA00878EC5 /* MessageGen.swift in Sources */,
+				8825B73622FD6FDA00878EC5 /* BaseHandler.swift in Sources */,
+				8825B75122FD6FDA00878EC5 /* ChatBsProtocol.swift in Sources */,
+				8825B75022FD6FDA00878EC5 /* MessageReadProtocol.swift in Sources */,
+				8825B74D22FD6FDA00878EC5 /* SingleChatDelegate.swift in Sources */,
+				8825B73C22FD6FDA00878EC5 /* ConnetHandler.swift in Sources */,
+				8825B74222FD6FDA00878EC5 /* SingleChatReq.pb.swift in Sources */,
+				8825B73E22FD6FDA00878EC5 /* HeartBeatReq.pb.swift in Sources */,
+				8825B73822FD6FDA00878EC5 /* SingleChatHandler.swift in Sources */,
+				8825B74022FD6FDA00878EC5 /* ConnectResp.pb.swift in Sources */,
+				8825B73B22FD6FDA00878EC5 /* AddFriendRespHandler.swift in Sources */,
+				8825B74922FD6FDA00878EC5 /* Type.swift in Sources */,
+				8825B74B22FD6FDA00878EC5 /* SocketClientDelegate.swift in Sources */,
+				8825B74F22FD6FDA00878EC5 /* ConnectDelegate.swift in Sources */,
+				8825B73722FD6FDA00878EC5 /* HeartBeatHandler.swift in Sources */,
+				8825B75422FD6FDA00878EC5 /* GCDAsyncUdpSocket.m in Sources */,
+				8825B74322FD6FDA00878EC5 /* AddFriendReq.pb.swift in Sources */,
+				8825B74422FD6FDA00878EC5 /* AddFriendResp.pb.swift in Sources */,
+				8825B74622FD6FDA00878EC5 /* Message.pb.swift in Sources */,
+				8825B74C22FD6FDA00878EC5 /* GroupChatDelegate.swift in Sources */,
+				8825B73922FD6FDA00878EC5 /* GroupChatHandler.swift in Sources */,
+				8825B75222FD6FDA00878EC5 /* ReadRawVarint32Decode.swift in Sources */,
+				8825B73D22FD6FDA00878EC5 /* AckHandler.swift in Sources */,
+				8825B74822FD6FDA00878EC5 /* MsgType.swift in Sources */,
+				8825B74122FD6FDA00878EC5 /* AckReq.pb.swift in Sources */,
+				8825B74722FD6FDA00878EC5 /* SocketConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8825B6EB22FD6E9300878EC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8825B6EC22FD6E9300878EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8825B6EE22FD6E9300878EC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "gim-ios-sdk/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.gogym.gim-ios-sdk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8825B6EF22FD6E9300878EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "gim-ios-sdk/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.gogym.gim-ios-sdk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8825B6D622FD6E9200878EC5 /* Build configuration list for PBXProject "gim-ios-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8825B6EB22FD6E9300878EC5 /* Debug */,
+				8825B6EC22FD6E9300878EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8825B6ED22FD6E9300878EC5 /* Build configuration list for PBXNativeTarget "gim-ios-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8825B6EE22FD6E9300878EC5 /* Debug */,
+				8825B6EF22FD6E9300878EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8825B6D322FD6E9200878EC5 /* Project object */;
+}
